@@ -1,0 +1,51 @@
+/*CSS para o cabeçario*/
+
+header {
+  background: url("Banner-7DaysOfCode2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 1em 0;
+}
+
+.logo {
+	width: 30%;
+  margin: 0 auto;
+  display: block;
+  padding: 1em 0;
+}
+
+.bloco {
+	width: 1280px;
+	margin: 0 auto;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  padding: 1em 0;
+}
+
+nav li {
+	display: inline;
+}
+
+nav a {
+	color: lightgrey;
+  text-shadow: 2px 0 black, -2px 0 black, 0 2px black, 0 -2px black, 1px 1px black, 
+  -1px -1px black, 1px -1px black, -1px 1px black;
+	font-weight: bold;
+	font-size: 1.8em;
+	text-decoration: none;
+	padding: 0 0.5em;
+}
+
+nav a:hover {
+	text-decoration: underline;
+  
+}
+
+/*Página Index*/
+
+
+
+/*Day 1*/
