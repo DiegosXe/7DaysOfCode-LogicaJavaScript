@@ -49,3 +49,35 @@ nav a:hover {
 
 
 /*Day 1*/
+
+.conteudo {
+  padding: 2em 0;
+  background: #282828;
+}
+
+.largura-conteudo {
+  width: 1280px;
+	margin: 0 auto;
+}
+
+.titulo-principal {
+  margin: 0 auto 1em;
+  padding: 0.2em 0.4em 0.1em;
+	text-align: center;
+  font-family: 'Bebas Neue', cursive;
+	font-size: 3em;
+  background: yellow;
+  color: black;
+  width: fit-content;
+}
+
+.texto {
+  background: black;
+  padding: 2.5em;
+  border-radius: 5px;
+  font-family: 'Rokkitt', serif;
+  font-size: 1.5em;
+  color: white;
+  box-shadow: 0 2px 24px aqua;
+}
+
