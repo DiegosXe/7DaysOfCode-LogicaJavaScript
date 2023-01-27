@@ -44,15 +44,14 @@ nav a:hover {
 	text-decoration: underline;
 }
 
-/*Página Index*/
+/*Elementos em comum*/
 
-
-
-/*Day 1*/
+body {
+  background: #282828;
+}
 
 .conteudo {
   padding: 2em 0;
-  background: #282828;
 }
 
 .largura-conteudo {
@@ -71,12 +70,31 @@ nav a:hover {
   width: fit-content;
 }
 
-.texto {
+/*Página Index*/
+
+
+
+/*Day 1*/
+
+.texto1 {
   background: black;
   padding: 2.5em;
   border-radius: 5px;
   font-family: 'Rokkitt', serif;
   font-size: 1.5em;
+  color: white;
+  box-shadow: 0 2px 24px aqua;
+}
+
+/*Day 2*/
+
+.texto2 {
+  background: black;
+  padding: 2.5em;
+  border-radius: 5px;
+  font-family: 'Rokkitt', serif;
+  font-size: 1.5em;
+  text-align: center;
   color: white;
   box-shadow: 0 2px 24px aqua;
 }
