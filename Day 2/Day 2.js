@@ -1,18 +1,28 @@
-const nome = prompt("Qual o seu nome?");
-const idade = prompt("Quantos anos você tem?");
-const linguagem = prompt("Qual linguagem de programação você está estudando?");
+function inicio() {
+  var nome = document.querySelector("#nome").value;
+  var idade = document.querySelector("#idade").value;
+  var linguagem = document.querySelector("#linguagem").value;
 
-document.write(
-  `Olá ${nome}, você tem ${idade} anos e já está aprendendo ${linguagem}! <br><br>`
-);
-
-const gostar = prompt(
-  `Você gosta de estudar ${linguagem}? Responda com o número 1 para SIM ou 2 para NÃO.`
-);
-
-if (gostar == 1) {
-  document.write("Muito bom! Continue estudando e você terá muito sucesso.");
+  createModal(nome, idade, linguagem);
 }
-if (gostar == 2) {
-  document.write("Ahh que pena... Já tentou aprender outras linguagens?");
+
+function createModal(nome, idade, linguagem) {
+  var modal = document.createElement("div");
+  modal.className = "modal";
+
+  modal.innerHTML = `
+    <p class="mensagem">Olá ${nome}, você tem ${idade} anos e já está aprendendo ${linguagem}.</p>
+    <p>Você gosta de estudar ${linguagem}?</p>
+    <fieldset>
+      <input type="radio" name="option" id="yes">
+      <label for="yes" class="opts yes">Sim</label>
+      <input type="radio" name="option" id="no">
+      <label for="no" class="opts no">Não</label>
+    </fieldset>
+    `;
+
+  document.querySelector(".texto2").appendChild(modal);
 }
+
+var enviar = document.querySelector("#enviar");
+enviar.addEventListener("click", inicio);

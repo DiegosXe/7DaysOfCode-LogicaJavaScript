@@ -80,10 +80,11 @@ body {
   background: black;
   padding: 2.5em;
   border-radius: 5px;
+  box-shadow: 0 2px 24px aqua;
   font-family: 'Rokkitt', serif;
   font-size: 1.5em;
   color: white;
-  box-shadow: 0 2px 24px aqua;
+
 }
 
 /*Day 2*/
@@ -92,10 +93,99 @@ body {
   background: black;
   padding: 2.5em;
   border-radius: 5px;
+  box-shadow: 0 2px 24px aqua;
+  display: flex;
+  justify-content: center;
+  position: relative;
   font-family: 'Rokkitt', serif;
   font-size: 1.5em;
-  text-align: center;
   color: white;
-  box-shadow: 0 2px 24px aqua;
+}
+
+form {
+  width: 48%;
+}
+
+.input-padrao {
+	display: block;
+	margin: 0.4em 0 1em;
+	padding: 5px 10px;
+	font-family: 'Rokkitt', serif;
+	font-size: 0.8em;
+	width: 93%;
+}
+
+#enviar {
+	width:35%;
+	padding: 0.2em 0.4em 0.1em;
+	margin: 0.5em 0 0 5em;
+	background: yellow;
+	color: black;
+	font-family: 'Bebas Neue', cursive;
+	font-size: 1.5em;
+	border: none;
+	transition: 1s all;
+	cursor: pointer;
+}
+
+#enviar:hover {
+	transform: scale(1.08);
+}
+
+.modal{
+  opacity: 1;
+  background-color: black;
+  padding: 1.8em;
+  position: absolute;
+  height: 11em;
+  width: 28em;
+  color: white;
+}
+
+.modal p:not(.mensagem) {
+  font-family: 'Rokkitt', serif;
+  font-size: 1.2em;
+  margin: 0 0 1em;
+  text-align: center;
+}
+
+.mensagem {
+  font-family: 'Rokkitt', serif;
+  font-size: 1.2em;
+  margin: 0 0 1.5em;
+  text-align: center;
+}
+
+fieldset {
+  font-family: 'Rokkitt', serif;
+  font-size: 1.2em;
+  position: relative;
+  text-align: center;
+}
+
+.opts.yes {
+  margin-right: 3em;
+}
+
+#yes:checked::after, #no:checked::after {
+  left: 0;
+  position: absolute;
+  text-align: center;
+  top: 3em;
+  width: 100%;
+}
+
+#yes:checked::after{
+  color: white;
+  font-family: 'Rokkitt', serif;
+  font-size: 2em;
+  content: "Muito bom! Continue estudando e você terá muito sucesso!";
+}
+
+#no:checked::after{
+  color: white;
+  font-family: 'Rokkitt', serif;
+  font-size: 2em;
+  content: "Ah, que pena... Já tentou aprender outras linguagens?";
 }
 
