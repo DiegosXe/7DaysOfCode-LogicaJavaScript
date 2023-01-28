@@ -1,0 +1,12 @@
+/*Day 1*/
+
+.texto1 {
+  background: black;
+  padding: 2.5em;
+  border-radius: 5px;
+  box-shadow: 0 2px 24px aqua;
+  font-family: 'Rokkitt', serif;
+  font-size: 1.5em;
+  color: white;
+
+}
