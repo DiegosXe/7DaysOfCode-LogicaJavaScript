@@ -3,19 +3,11 @@ const idade = prompt("Quantos anos você tem?");
 const linguagem = prompt("Qual linguagem de programação você está estudando?");
 
 document.write(
-  "Olá " +
-    nome +
-    ", você tem " +
-    idade +
-    " anos e já está aprendendo " +
-    linguagem +
-    "! <br><br>"
+  `Olá ${nome}, você tem ${idade} anos e já está aprendendo ${linguagem}! <br><br>`
 );
 
 const gostar = prompt(
-  "Você gosta de estudar" +
-    linguagem +
-    "? Responda com o número 1 para SIM ou 2 para NÃO."
+  `Você gosta de estudar ${linguagem}? Responda com o número 1 para SIM ou 2 para NÃO.`
 );
 
 if (gostar == 1) {
