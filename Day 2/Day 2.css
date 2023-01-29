@@ -95,11 +95,11 @@ fieldset {
   text-align: center;
 }
 
-.opts.yes {
+.opts.sim {
   margin-right: 3em;
 }
 
-#yes:checked::after, #no:checked::after {
+#sim:checked::after, #nao:checked::after {
   left: 0;
   position: absolute;
   text-align: center;
@@ -107,14 +107,14 @@ fieldset {
   width: 100%;
 }
 
-#yes:checked::after{
+#sim:checked::after{
   color: white;
   font-family: 'Rokkitt', serif;
   font-size: 2em;
   content: "Muito bom! Continue estudando e você terá muito sucesso!";
 }
 
-#no:checked::after{
+#nao:checked::after{
   color: white;
   font-family: 'Rokkitt', serif;
   font-size: 2em;

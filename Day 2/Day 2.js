@@ -37,9 +37,9 @@ const closeModal = function () {
 };
 
 function clearRadioGroup() {
-  var ele = document.getElementsByName("option");
-  for (var i = 0; i < ele.length; i++) {
-    ele[i].checked = false;
+  var rst = document.getElementsByName("option");
+  for (var i = 0; i < rst.length; i++) {
+    rst[i].checked = false;
   }
 }
 
