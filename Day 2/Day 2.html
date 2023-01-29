@@ -35,7 +35,7 @@
       <section class="conteudo">
         <div class="largura-conteudo">
           <h1 class="titulo-principal">Variáveis</h1>
-          <div class="texto2">
+          <div class="caixa">
             <form>
               <label for="nome">Qual seu nome?</label>
               <input type="text" id="nome" name="nome" class="input-padrao">
@@ -48,10 +48,28 @@
               
               <input type="button" value="Enviar" id="enviar">
             </form>
-            <script src="Day 2.js"></script>
+            
+            <div class="modal hidden">
+              <div class="flex">
+                <input type="button" value="⨉" class="btn-close" id="fechar">
+              </div>
+              <div class="msg1">
+              </div>
+              <div class="msg2">
+              </div>
+              <fieldset>
+                <label for="yes" class="opts yes">
+                  <input type="radio" name="option" id="yes">Sim
+                </label>
+                <label for="no" class="opts no">
+                  <input type="radio" name="option" id="no">Não
+                </label>
+              </fieldset>
+            </div>
           </div>
         </div>
       </section>
+      <script src="Day 2.js"></script>
     </main>
   </body>
 </html>

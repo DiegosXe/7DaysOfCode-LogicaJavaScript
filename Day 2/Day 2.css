@@ -1,6 +1,6 @@
 /*Day 2*/
 
-.texto2 {
+.caixa {
   background: black;
   padding: 2.5em;
   border-radius: 5px;
@@ -43,27 +43,48 @@ form {
 	transform: scale(1.08);
 }
 
-.modal{
-  opacity: 1;
-  background-color: black;
+.modal {
+  display: flex;
+  flex-direction: column;
   padding: 1.8em;
   position: absolute;
+  z-index: 1;
   height: 11em;
-  width: 28em;
+  width: 30em;
+  background-color: black;
   color: white;
 }
 
-.modal p:not(.mensagem) {
-  font-family: 'Rokkitt', serif;
-  font-size: 1.2em;
-  margin: 0 0 1em;
-  text-align: center;
+.modal .flex {
+  text-align: right;
 }
 
-.mensagem {
-  font-family: 'Rokkitt', serif;
+.btn-close {
+  transform: translate(10px, -20px);
+  padding: 0.5rem 0.7rem;
+  background: #eee;
+  border-radius: 50%;
+  cursor: pointer;
+  border: none;
+  font-weight: 600;
+}
+
+.btn-close:hover {
+  background: white;
+}
+
+.msg1 {
   font-size: 1.2em;
-  margin: 0 0 1.5em;
+  margin: 0 0 1.6em;
+  font-family: 'Rokkitt', serif;
+  text-align: center;
+  color: white;
+}
+
+.msg2 {
+  font-size: 1.2em;
+  margin: 0 0 0.8em;
+  font-family: 'Rokkitt', serif;
   text-align: center;
 }
 
@@ -98,4 +119,8 @@ fieldset {
   font-family: 'Rokkitt', serif;
   font-size: 2em;
   content: "Ah, que pena... Já tentou aprender outras linguagens?";
+}
+
+.hidden {
+  display: none;
 }
