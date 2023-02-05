@@ -13,29 +13,22 @@
   color: white;
 }
 
-form {
-  width: 48%;
-}
-
 .opcoes-area {
+  width: 48%;
   text-align: center;
 }
 
-legend {
+.questao {
   margin: 0 0 1em;
 }
 
-.linha-opcoes {
+.opcoes {
   display: flex;
   justify-content: space-between;
-  margin: 0 5em;
+  margin: 0 5em 2.5em;
 }
 
-fieldset {
-  margin: 0 0 1em;
-}
-
-form .opcoes-area label {
+.caixa .opcoes-area label {
   background-color: white;
   color: black;
   font-weight: bolder;
@@ -53,10 +46,9 @@ form .opcoes-area label {
   background-color: aqua;
 }
 
-#enviar {
+.button {
 	width:35%;
 	padding: 0.2em 0.4em 0.1em;
-	margin: 0.5em 0 0 5em;
 	background: yellow;
 	color: black;
 	font-family: 'Bebas Neue', cursive;
@@ -66,6 +58,6 @@ form .opcoes-area label {
 	cursor: pointer;
 }
 
-#enviar:hover {
+.button:hover {
 	transform: scale(1.08);
 }
