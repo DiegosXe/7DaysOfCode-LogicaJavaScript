@@ -14,18 +14,22 @@
 }
 
 .opcoes-area {
-  width: 48%;
+  width: 80%;
   text-align: center;
 }
 
-.questao {
+.questao p {
   margin: 0 0 1em;
+}
+
+.questao #msg {
+  margin: 0 0 2em;
 }
 
 .opcoes {
   display: flex;
   justify-content: space-between;
-  margin: 0 5em 2.5em;
+  margin: 0 12em 2.5em;
 }
 
 .caixa .opcoes-area label {
@@ -35,19 +39,37 @@
   cursor: pointer;
   font-size: 1em;
   padding: 0.2em 0.4em 0.2em;
-  width: 105px;
+  width: 130px;
 }
 
-.opcoes-area input[type=radio]{
+.opcoes input[type=radio]{
   display: none;
 }
 
-.opcoes-area input:checked+label{
+.opcoes input[type=text]{
+  font-family: 'Rokkitt', serif;
+  font-size: 1em;
+  padding: 5px 10px;
+  width: 100%;
+}
+
+.final {
+  font-size: 1.5em;
+  font-weight: bolder;
+}
+
+.opcoes input:checked+label{
   background-color: aqua;
 }
 
+.botoes {
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+}
+
 .button {
-	width:35%;
+	width:15%;
 	padding: 0.2em 0.4em 0.1em;
 	background: yellow;
 	color: black;
