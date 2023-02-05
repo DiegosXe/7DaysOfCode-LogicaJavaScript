@@ -8,6 +8,7 @@
 
       <link rel="stylesheet" href="../reset.css">
 		  <link rel="stylesheet" href="../style.css">
+      <link rel="stylesheet" href="Day 3.css">
       <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css2?family=Rokkitt&display=swap" rel="stylesheet">
   </head>
@@ -34,11 +35,24 @@
       <section class="conteudo">
         <div class="largura-conteudo">
           <h1 class="titulo-principal">Fluxo de Decisão</h1>
-          <div class="texto3">
-            <script src="Day 3.js"></script>
+          <div class="caixa">
+            <form>
+              <fieldset class="opcoes-area">
+                <legend>Você pretende seguir para qual área?</legend>
+                <div class="linha-opcoes">
+                  <input type="radio" name="area" id="front">
+                  <label for="front">Front-end</label>
+      
+                  <input type="radio" name="area" id="back">
+                  <label for="back">Back-end</label>
+                </div>
+              </fieldset>
+              <input type="button" value="Enviar" id="enviar">
+            </form>
           </div>
         </div>
       </section>
+      <!--<script src="Day 3.js"></script>-->
     </main>
   </body>
 </html>

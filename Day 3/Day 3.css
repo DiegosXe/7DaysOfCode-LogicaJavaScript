@@ -1,0 +1,71 @@
+/*Day 2*/
+
+.caixa {
+  background: black;
+  padding: 2.5em;
+  border-radius: 5px;
+  box-shadow: 0 2px 24px aqua;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  font-family: 'Rokkitt', serif;
+  font-size: 1.5em;
+  color: white;
+}
+
+form {
+  width: 48%;
+}
+
+.opcoes-area {
+  text-align: center;
+}
+
+legend {
+  margin: 0 0 1em;
+}
+
+.linha-opcoes {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 5em;
+}
+
+fieldset {
+  margin: 0 0 1em;
+}
+
+form .opcoes-area label {
+  background-color: white;
+  color: black;
+  font-weight: bolder;
+  cursor: pointer;
+  font-size: 1em;
+  padding: 0.2em 0.4em 0.2em;
+  width: 105px;
+}
+
+.opcoes-area input[type=radio]{
+  display: none;
+}
+
+.opcoes-area input:checked+label{
+  background-color: aqua;
+}
+
+#enviar {
+	width:35%;
+	padding: 0.2em 0.4em 0.1em;
+	margin: 0.5em 0 0 5em;
+	background: yellow;
+	color: black;
+	font-family: 'Bebas Neue', cursive;
+	font-size: 1.5em;
+	border: none;
+	transition: 1s all;
+	cursor: pointer;
+}
+
+#enviar:hover {
+	transform: scale(1.08);
+}
