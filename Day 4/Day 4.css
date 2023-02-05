@@ -1,0 +1,14 @@
+/*Day 4*/
+
+.caixa {
+  background: black;
+  padding: 2.5em;
+  border-radius: 5px;
+  box-shadow: 0 2px 24px aqua;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  font-family: 'Rokkitt', serif;
+  font-size: 1.5em;
+  color: white;
+}
